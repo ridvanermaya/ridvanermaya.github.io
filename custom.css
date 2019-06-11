@@ -6,6 +6,19 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+.navbar {
+    font-size: 18px;
+}
+
+.link-change-background:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+h1 {
+    color: darkgray;
+}
+
 /* Navbar Modifications */
 .nav-link {
     text-align: center;
@@ -81,6 +94,10 @@ footer {
     margin: auto;
 }
 
+.center-text {
+    text-align: center;
+}
+
 /* Jumbotron */
 .jumbotron {
     text-align: center;
@@ -97,4 +114,31 @@ footer {
     border-radius: 5px;
     max-width: 340px;
     height: auto;
+}
+
+/* Contact Page */
+.contactMe {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    border-radius: 5px;
+}
+
+.contactMe .row .col-12 h2 {
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.contactMe .row {
+    width: 100%;
+    margin: auto;
+}
+
+.form-control {
+    margin: auto;
+}
+
+#submit:hover {
+    background-color: lightblue;
+    color: white;
 }
