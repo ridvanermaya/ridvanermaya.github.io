@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
-    <title>Ridvan Ermaya Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <title>Ridvan Ermaya</title>
 </head>
-<body id="body">
-    <nav id="navbar">
-        <ul id="navbar_list">
-            <li><a href="index.html"><img id="navbar_image" src="portfolio_logo.png" alt="R1 Logo"></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutMe.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+<body>
+    <nav class="navbar navbar-inverse navbar-light navbar-expand-md" style="background-color: #e3f2fd;">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav">
+            <li class="navbar-item">
+                <a class="nav-link disabled" href="#">Ridvan Ermaya</a>
+            </li>
         </ul>
-    </nav>
-    <div class="projectPage">
-        <div class="projectPageImage">
-            <img src="underConstruction.svg" alt="Under Construction Image">
+        <div class="collapse navbar-collapse flex-row-reverse" id="collapse_target">
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
         </div>
-        <div class="projectPageInformation">
-            <h1>Under Construction!</h1>
-            <h1>Coming Soon!</h1>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-5">UNDER CONSTRUCTION!</h1>
+            <p class="lead">I'm currenty building this page. As I build more projects
+                this page will be updated. Thank you for your patience.
+            </p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="padding-top: 10px;">
+                <img id="underconstruction_image" src="underConstruction.svg" alt="Under Construction Image">
+            </div>
         </div>
     </div>
     <footer>
@@ -42,6 +65,8 @@
             <p class="smalltext">All rights are reserved. Powered by Ridvan Ermaya</p>
         </div>
     </footer>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
