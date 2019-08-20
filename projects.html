@@ -51,6 +51,23 @@
                 </div>
             </div>
         </div>
+        <div id="coords">
+            
+        </div>
+        <script>
+            function GetLocation() {
+                let coords = document.getElementById('coords');
+                let latlong = document.createElement(`h4`);
+                if ('geolocation' in navigator) {
+                    navigator.geolocation.getCurrentPosition(position => {
+                        coords.append(latlong.innerHTML = `Latitude: ${position.coords.latitude}, Longitude: ${position.coords.longitude}`);
+                    });
+                }
+                setTimeout(GetLocation, 50000);
+            }
+            
+           GetLocation();
+        </script>
         <footer>
             <div class="footerLinks">
                 <a href="https://www.facebook.com/ridvanermaya"><img style="height:40px; width:40px;" src="img/facebook.svg"></a>
